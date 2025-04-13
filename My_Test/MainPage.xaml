@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="My_Test.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Spacing="30">
+
+        <!-- Заголовок -->
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
+            <Label Text="Где Мы гуляем!"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="30" />
+        </Frame>
+
+        <!-- Местоположение -->
+        <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand">
+            <Label Text="{Binding FakeLocation}"
+                   FontSize="20"
+                   TextColor="DarkGray"
+                   HorizontalTextAlignment="Center" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,15 @@
+C:\Users\Klime\source\repos\My_Test\My_Test\bin\Debug\netstandard2.0\My_Test.deps.json
+C:\Users\Klime\source\repos\My_Test\My_Test\bin\Debug\netstandard2.0\My_Test.dll
+C:\Users\Klime\source\repos\My_Test\My_Test\bin\Debug\netstandard2.0\My_Test.pdb
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\My_Test.csproj.AssemblyReference.cache
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\My_Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\My_Test.AssemblyInfoInputs.cache
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\My_Test.AssemblyInfo.cs
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\My_Test.csproj.CoreCompileInputs.cache
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\My_Test.dll
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\refint\My_Test.dll
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\My_Test.pdb
+C:\Users\Klime\source\repos\My_Test\My_Test\obj\Debug\netstandard2.0\ref\My_Test.dll
