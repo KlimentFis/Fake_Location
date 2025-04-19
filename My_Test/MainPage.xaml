@@ -8,19 +8,44 @@
                  Spacing="30">
 
         <!-- Заголовок -->
-        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0">
-            <Label Text="Где Мы гуляем!"
+        <Label Text="Где Мы гуляем!"
                    HorizontalTextAlignment="Center"
-                   TextColor="White"
-                   FontSize="30" />
-        </Frame>
-
-        <!-- Местоположение -->
-        <StackLayout VerticalOptions="CenterAndExpand"
-                     HorizontalOptions="CenterAndExpand">
-            <Label Text="{Binding FakeLocation}"
-                   FontSize="20"
+                   Padding="15"
                    TextColor="DarkGray"
+                   FontSize="30" />
+
+        <!-- Местоположение -->        
+        <Label Text="{Binding FakeLocation}"
+                   FontSize="35"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center" />
+        
+        <Label Text="Отмазки:"
+                   FontSize="25"
+                   TextColor="DarkGray"
+                   HorizontalTextAlignment="Center" />
+
+        <StackLayout
+                     HorizontalOptions="CenterAndExpand">
+            <Label Text="Тут будут отмазки...."
+                   FontSize="20"
+                   TextColor="Gray"
+                   HorizontalTextAlignment="Center" />
+            <Label Text="Тут будут отмазки...."
+                   FontSize="20"
+                   TextColor="Gray"
+                   HorizontalTextAlignment="Center" />
+            <Label Text="Тут будут отмазки...."
+                   FontSize="20"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center" />
+            <Label Text="Тут будут отмазки...."
+                   FontSize="20"
+                   TextColor="Gray"
+                   HorizontalTextAlignment="Center" />
+            <Label Text="Тут будут отмазки...."
+                   FontSize="20"
+                   TextColor="Gray"
                    HorizontalTextAlignment="Center" />
         </StackLayout>
 

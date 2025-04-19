@@ -3,37 +3,56 @@ using Xamarin.Forms;
 
 namespace My_Test
 {
-    public partial class App : Application
+    public partial class MainPage : ContentPage
     {
-        public string FakeLocation { get; set; }
-
         public App()
         {
             InitializeComponent();
+        }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
-            FakeLocation = GenerateFakeLocation();
-            MainPage = new MainPage
+            string[] excuses = new string[]
             {
-                BindingContext = this
+                "Сломался автобус",
+                "Бабушка задержала на пирожки",
+                "Шёл по встречке в метро",
+                "Поймал галлюцинацию",
+                "Решал уравнение Шредингера",
+                "Застрял в лифте с философом",
+                "Кот съел расписание",
+                "Научился телепортироваться, но не туда",
+                "Выиграл спор с зеркалом",
+                "Протестировал теорию относительности"
             };
+
+            int highlightedIndex = GetHighlightIndex(excuses.Length);
+
+            StackLayout newExcusesLayout = new StackLayout
+            {
+                HorizontalOptions = LayoutOptions.CenterAndExpand
+            };
+
+            for (int i = 0; i < excuses.Length; i++)
+            {
+                newExcusesLayout.Children.Add(new Label
+                {
+                    Text = excuses[i],
+                    FontSize = 20,
+                    TextColor = (i == highlightedIndex) ? Color.OrangeRed : Color.Gray,
+                    HorizontalTextAlignment = TextAlignment.Center
+                });
+            }
+
+            if (Content is StackLayout rootLayout && rootLayout.Children.Count >= 5 && rootLayout.Children[4] is StackLayout oldExcusesLayout)
+            {
+                rootLayout.Children[4] = newExcusesLayout;
+            }
         }
 
-        private string GenerateFakeLocation()
+        private int GetHighlightIndex(int length)
         {
-            string[] locations = new string[]
-            {
-        "Киевская, ТЦ Европейский",
-        "Курская, Geek Boards",
-        "Деловой центр, Афимол",
-        "Библиотека имени Ленина, Библиотека",
-        "Сокольники, Парк",
-        "Измайловская, Измайловский парк",
-        "ВДНХ, Парк",
-        "Говорово, Гипер Лента",
-        "Тимирязевская, Тимирязевский парк",
-        "Юго-Восточная, Парк Кузьминки"
-            };
-
             DateTime now = DateTime.Now;
 
             int SumDigits(int number)
@@ -47,18 +66,10 @@ namespace My_Test
                 return sum;
             }
 
-            int daySumMod = SumDigits(now.Day) % 10;
-            int monthSumMod = SumDigits(now.Month) % 10;
+            int daySum = SumDigits(now.Day);
+            int monthSum = SumDigits(now.Month);
 
-            int index = (daySumMod + monthSumMod) % locations.Length;
-
-            return locations[index];
+            return (daySum + monthSum) % length;
         }
-
-        protected override void OnStart() { }
-
-        protected override void OnSleep() { }
-
-        protected override void OnResume() { }
     }
 }
